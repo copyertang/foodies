@@ -1,0 +1,351 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	width: 1500px;
+	height: 3088px;
+	min-width: 750px;
+	min-height: 1600px;
+}
+/*网页结构的布局*/
+/*首先是大板块*/
+.header{
+	position: relative;
+    width: 1500px;
+    min-width: 750px;
+    height: 110px;
+    background-color: #fff;
+}
+.banner{
+	position: relative;
+    width: 1500px;
+    min-width: 750px;
+    height: 570px;
+}
+.content{
+	position: relative;
+    width: 1500px;
+    min-width: 750px;
+    height: 2090px;
+}
+.content-menu{
+	position: relative;
+    width: 1500px;
+    min-width: 750px;
+    height: 600px;
+}
+.content-dishes{
+	position: relative;
+    width: 1500px;
+    min-width: 750px;
+    height: 662px;
+}
+.content-gallery{
+	position: relative;
+    width: 1500px;
+    min-width: 750px;
+    height: 828px;
+}
+.footer{
+	position: relative;
+    width: 1500px;
+    min-width: 750px;
+    height: 316px;
+    background-color: #3b3b3b
+;}
+/*接着是板块中的公共部分*/
+.public-content-header{
+	position: absolute;
+	left:200px;
+	width: 1100px;
+	height: 110px;
+}
+.public-content-menu{
+	position: absolute;
+	left:200px;
+	width: 1100px;
+	height: 600px;
+}
+.public-content-dishes{
+	position: absolute;
+	left:200px;
+	width: 1100px;
+	height: 662px;
+}
+.public-content-galley{
+	position: absolute;
+	left:200px;
+	width: 1100px;
+	height: 828px;
+}
+.public-content-footer{
+	position: absolute;
+	left:200px;
+	width: 1100px;
+	height: 316px;
+}
+/*以上是网页结构布局*/
+
+
+/*下面是header模块样式*/
+.public-content-header img{
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+.nav{
+	position: absolute;
+	right: 0;
+	top: 44px;
+}
+.nav li{
+	float: left;
+	list-style: none;
+}
+.nav a{
+	display: block;
+	margin-right: 50px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #484848;
+}
+.nav>li:last-child a{
+	margin-right: 0;
+}
+/*以上是header模块部分*/
+
+/*下面是banner模块部分*/
+.banner{
+	background:url(images/4.png) no-repeat;
+}
+.banner img{
+	display: block;
+	position: absolute;
+	top: 208px;
+	left: 50%;
+	margin-left: -338px;
+	width: 776px;
+	height: 116px;
+}
+.banner p{
+	position: absolute;
+	top: 344px;
+	left: 508px;
+	font-size: 16px;
+	color: #fff;
+}
+.line-r{
+	display: inline-block;
+	width: 40px;
+	border-top: 1px solid #fff;
+	margin-right: 26px;
+	vertical-align: middle;
+}
+.line-l{
+	display: inline-block;
+	width: 40px;
+	border-top: 1px solid #fff;
+	margin-left: 26px;
+	vertical-align: middle;
+}
+/*以上是banner模块部分*/
+
+/*下面是content模块部分*/
+
+/*下面是content-menu模块部分*/
+.content{
+	border-top: 4px solid #f34949;
+}
+.public-content-menu div{
+	position: absolute;
+	left: 474px;
+	width: 155px;
+	height: 75px;
+	text-align: center;
+	line-height: 65px;
+	background: #f34949;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+.public-content-menu div:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 78px solid transparent;
+	border-right: 78px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+.content-menu-l{
+	display: block;
+	position: relative;
+	float: left;
+	top: 156px;
+	width: 496px;
+	height: 40px;
+	list-style: none;
+	margin-bottom: 60px;
+	box-sizing: border-box;
+}
+.content-menu-l a{
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+}
+.content-menu-l:nth-child(even){
+	margin-right: 100px;
+}
+.content-menu-l span{
+	position: absolute;
+	display: inline-block;
+    top: 10px;
+	left: 230px;
+	width: 192px;
+	border-top: 1px solid #bcbcbc;
+}
+.content-menu-l .price{
+	position: absolute;
+	right: 2px;
+	top: 0;
+}
+.content-menu-l .detail{
+	font-size: 12px;
+	color: #bcbcbc;
+}
+.menu-button{
+	position: absolute;
+	left: 484px;
+	bottom: 0;
+	width: 134px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 16px;
+	font-size: 14px;
+	list-style: none;
+	color: #b7b7b7;
+	border: 1px solid #d7d5d5;
+	box-sizing: border-box;
+}
+.menu-button li{
+	float: left;
+}
+.menu-button>li:nth-child(2){
+	margin-left: 12px;
+}
+.menu-button img{
+	width: 11px;
+	height: 8px;
+	margin-left: 12px;
+}
+
+/*下面是content-dishes模块部分*/
+
+.public-content-dishes h3{
+	position: absolute;
+	top: 200px;
+}
+
+.public-content-dishes .food{
+	position: relative;
+	float: left;
+	top: 296px;
+	width: 230px;
+	height: 268px;
+	margin-right: 60px;
+	box-sizing: border-box;
+	list-style: none;
+	overflow: hidden;
+}
+.public-content-dishes>.food:last-child {
+	margin-right: 0;
+}
+.food img{
+	margin-bottom: 30px;
+}
+.food li{
+	display: inline;
+}
+.dishes-price{
+	float: right;
+}
+/*下面是content-gallery模块部分*/
+.public-content-galley h3{
+	position: absolute;
+	top: 100px;
+}
+.food-picture{
+	position: relative;
+	top: 248px;
+	width: 1100px;
+	height: 381px;
+}
+.food-picture img{
+	float: left;
+}
+.food-picture>img:nth-child(3){
+	position: absolute;
+	top: 251px;
+	left: 353px;
+	width: 288px;
+	height: 130px;
+	overflow: hidden;
+}
+/*以上是content模块部分*/
+
+/*下面是footer模块部分*/
+.footer ul{
+	float: left;
+	list-style: none;
+	color: #fff;
+	font-size: 16px;
+}
+.footer li{
+	color: #fff;
+}
+.footer span{
+	font-weight: bold;
+}
+.footer img{
+	position: absolute;
+	top:84px;
+	right: 40px;
+}
+.footer p{
+	position: absolute;
+	top: 156px;
+	right: 30px;
+	color: #fff;
+	line-height: 16px;
+}
+.content-footer1{
+	position: absolute;
+	top: 100px;
+}
+.content-footer2{
+	position: absolute;
+	left: 290px;
+	top: 100px;
+}
+.content-footer3{
+	position: absolute;
+	left: 576px;
+	top: 100px;
+}
+.content-footer1 li{
+    display: block;
+    margin-bottom: 14px;
+}
+.content-footer2 li{
+    display: block;
+    margin-bottom: 14px;
+}
+.content-footer3 li{
+    display: block;
+    margin-bottom: 16px;
+}
+/*以上是footer模块部分*/
